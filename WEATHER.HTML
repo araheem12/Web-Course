@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+ 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      background-image: url('humidity.png'); /* Add the path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .weather-info {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #weather-data {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="weather-info">
+      <label for="city">Enter City:</label>
+      <input type="text" id="city" placeholder="Enter city name">
+      <button id="search-btn">Search</button>
+      <div id="weather-data"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
